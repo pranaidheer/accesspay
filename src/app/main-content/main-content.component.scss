@@ -1,0 +1,130 @@
+$primary: #4f80e1;
+
+.main-content-wrap {
+  margin-top: 15px;
+
+  .custom-table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    th {
+      text-align: left;
+      font-family: Origin-Heavy;
+      font-size: 14px;
+      color: #545263;
+      letter-spacing: 0;
+      border-bottom: 2px solid #96959b;
+
+      a {
+        font-size: 14px;
+        color: $primary;
+      }
+
+      input[type="checkbox"] {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+
+        + label {
+          width: 20px;
+          height: 20px;
+          opacity: 0.1;
+          background: #ffffff;
+          border: 2px solid #545263;
+          border-radius: 3px;
+          display: inline-block;
+        }
+      }
+    }
+
+    td {
+      font-family: ArialMT;
+      font-size: 14px;
+      color: #545263;
+      border-bottom: 1px solid #96959b;
+
+      .icon {
+        color: #545263;
+        font-size: 26px;
+        height: 27px;
+        margin-left: 6px;
+      }
+
+      .time {
+        opacity: 0.5;
+        font-family: ArialMT;
+        font-size: 14px;
+        color: #545263;
+        margin-left: 10px;
+      }
+    }
+
+    .empty-cell {
+      padding: 25px 10px !important;
+    }
+
+    .icon-cell {
+      padding: 15px 10px;
+    }
+  }
+
+  .pagination-wrap {
+    font-family: ArialMT;
+    font-size: 14px;
+    color: #545263;
+
+    .page-numbers {
+      min-height: 30px;
+      min-width: 30px;
+      border: 1px solid #979797;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+
+      &.icon {
+        font-size: 14px;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-left: 20px;
+          margin-right: 0px;
+        }
+      }
+    }
+
+    .pagination-drop-down {
+      position: relative;
+      margin-right: 20px;
+      margin-left: 10px;
+
+      input.drop-down {
+        border: 1px solid #979797;
+        color: #545263;
+        min-height: 30px;
+        min-width: 30px;
+        max-width: 40px;
+        padding: 0px 20px 0px 10px;
+        border-radius: 3px;
+
+        &::placeholder {
+          opacity: 0.3;
+          font-family: ArialMT;
+          font-size: 16px;
+          color: #484848;
+          letter-spacing: 0;
+        }
+
+        + span {
+          font-size: 14px;
+          color: $primary;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

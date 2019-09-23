@@ -1,0 +1,62 @@
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.page-heading {
+  font-family: Origin-Heavy;
+  font-size: 36px;
+  color: #545263;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.profile-logout {
+  display: flex;
+
+  .profile-btn {
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px solid #d8d8d8;
+  }
+
+  .user-img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #bababa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bababa;
+    font-family: Origin-Regular;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+
+  .user-name {
+    font-family: Origin-Bold;
+    font-size: 14px;
+    color: #4a4a69;
+    line-height: 18px;
+  }
+
+  .user-position {
+    font-family: Origin-Regular;
+    font-size: 14px;
+    color: #96959b;
+    line-height: 18px;
+  }
+
+  .logout-btn {
+    display: flex;
+    align-self: center;
+
+    a {
+      font-size: 24px;
+      color: #4f80e1;
+      text-align: center;
+    }
+  }
+}

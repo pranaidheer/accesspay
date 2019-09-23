@@ -1,1 +1,202 @@
-/* You can add global styles to this file, and also import other style files */
+/* Variables */
+
+$primary: #4f80e1;
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+/* Flex Layout  */
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.d-flex-base {
+  display: flex;
+  align-items: baseline;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+  max-width: 100%;
+}
+
+.flex-100 {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+.flex-direction-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+/* Flex Layout End */
+
+/* Displays  */
+
+.d-block {
+  display: block;
+}
+
+.d-inlineblock {
+  display: inline-block;
+}
+
+/* Displays End */
+
+/* Widths  */
+
+.w100 {
+  width: 100%;
+}
+
+/* Widths  End */
+
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-area {
+  flex: 1 1 auto;
+  background-color: #ffffff;
+  padding: 35px 60px;
+}
+
+.left-navigation {
+  flex: 0 0 70px;
+  background-color: #f8f7f9;
+}
+
+.badge {
+  font-family: Arial-BoldMT;
+  font-size: 11px;
+  color: #ffffff;
+  text-align: center;
+  background: $primary;
+  border-radius: 10px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.tile {
+  padding: 3px 5px;
+  background-color: rgba(70, 192, 147, 0.2);
+  border-radius: 2px;
+  font-family: Arial-BoldMT;
+  font-size: 12px;
+  color: #04b272;
+}
+
+.button,
+button {
+  background-color: $primary;
+  border-radius: 4px;
+  border: 0px;
+  width: auto;
+  min-height: 40px;
+  padding: 10px 12px;
+  font-family: Origin-Heavy;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  .icon-fa {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .badge {
+    color: $primary;
+    background-color: #fff;
+    margin-left: 5px;
+    top: -1px;
+    position: relative;
+  }
+}
+
+input[type="checkbox"] {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+
+  + label {
+    width: 20px;
+    height: 20px;
+    opacity: 0.1;
+    background: #ffffff;
+    border: 2px solid #545263;
+    border-radius: 3px;
+    display: inline-block;
+  }
+}
+
+.search-wrap {
+  position: relative;
+  margin-right: 25px;
+
+  input.search {
+    border: 1px solid #545263;
+    min-height: 40px;
+    padding: 0px 30px 0px 15px;
+    border-radius: 4px;
+
+    &::placeholder {
+      opacity: 0.3;
+      font-family: ArialMT;
+      font-size: 16px;
+      color: #484848;
+      letter-spacing: 0;
+    }
+
+    + span {
+      font-size: 16px;
+      color: $primary;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.icon {
+  font-size: 16px;
+  color: $primary;
+}
+
+.filter-wrap {
+  display: flex;
+
+  span {
+    font-family: Origin-Regular;
+    font-size: 16px;
+    color: #545263;
+    margin-right: 15px;
+  }
+}
